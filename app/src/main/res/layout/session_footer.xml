@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="45dp">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:text="查看更多房源"
+        android:background="@drawable/more_bg"
+        android:textColor="#fff"
+        android:layout_width="125dp"
+        android:gravity="center"
+        android:layout_height="30dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#ccc"
+        android:layout_marginTop="10dp"
+        android:layout_height="10dp" />
+
+</LinearLayout>
