@@ -3,6 +3,7 @@ package com.sendinfo.okgodemo;
 import android.app.Application;
 import android.content.Context;
 
+import com.blankj.utilcode.util.Utils;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.cache.CacheEntity;
 import com.lzy.okgo.cache.CacheMode;
@@ -33,6 +34,7 @@ public class MyApplication extends Application {
         instance = this;
         context = getApplicationContext();
         configOkGo();
+        Utils.init(this);
     }
 
     public static Context getContext(){
