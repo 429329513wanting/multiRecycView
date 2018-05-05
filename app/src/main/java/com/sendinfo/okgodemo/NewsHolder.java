@@ -34,7 +34,7 @@ public class NewsHolder extends AbsViewHolder<HomeData.NewsBean> {
         introTv = itemView.findViewById(R.id.intro_tv);
         photo = itemView.findViewById(R.id.photo);
 
-        maskLineLayout = itemView.findViewById(R.id.mask_linear);
+        maskLineLayout = itemView.findViewById(R.id.mask_linear);o
         maskLineLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
