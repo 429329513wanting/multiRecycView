@@ -21,8 +21,8 @@ import java.util.Date;
 
 public class Constant {
 
-    public static final String APITOKEN = "89757";
-    public static final String APPKEY = "2017benkel63";
+    public static final String APITOKEN = "xx00xx00";
+    public static final String APPKEY = "xx00xx0";
 
 
     public static final String Baseurl = "http://www.benke168.com";

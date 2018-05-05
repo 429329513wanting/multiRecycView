@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void indexData(){
 
-        ParamsModel model = new ParamsModel();
+        /*ParamsModel model = new ParamsModel();
         model.setAreaid("178");
         HttpDto httpDto = new HttpDto("index",
                 Constant.INDEX,model);
@@ -116,6 +116,6 @@ public class MainActivity extends AppCompatActivity {
                 homeAdapter.setHomeData(homeData);
                 homeAdapter.notifyDataSetChanged();
             }
-        });
+        });*/
     }
 }
