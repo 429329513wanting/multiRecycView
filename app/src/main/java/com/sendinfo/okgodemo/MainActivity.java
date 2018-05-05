@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.blankj.utilcode.util.ToastUtils;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.sendinfo.okgodemo.HttpUtil.BaseResponse;
@@ -20,6 +21,8 @@ import com.sendinfo.okgodemo.HttpUtil.RequestCallBack;
 import com.sendinfo.okgodemo.Util.SPreferencesUtils;
 import com.socks.library.KLog;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -44,6 +47,38 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        EventBus.getDefault().register(this);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        EventBus.getDefault().unregister(this);
+    }
+    @Subscribe
+    public void onClickMaskGetModle(MessageEvent messageEvent){
+
+        Object data = messageEvent.getData();
+        if (data instanceof HomeData.HouseBean){
+
+            HomeData.HouseBean houseBean = (HomeData.HouseBean) data;
+            ToastUtils.showShort("特惠房源Click:"+houseBean.getTitle());
+
+        }else if(data instanceof HomeData.ReservationBean){
+
+            HomeData.ReservationBean reservationBean = (HomeData.ReservationBean) data;
+            ToastUtils.showShort("预约房源Click:"+reservationBean.getTitle());
+
+        }else if(data instanceof HomeData.NewsBean){
+
+            HomeData.NewsBean newsBean = (HomeData.NewsBean) data;
+            ToastUtils.showShort("新闻Click:"+newsBean.getTitle());
+
+        }
+    }
 
     private void indexData(){
 

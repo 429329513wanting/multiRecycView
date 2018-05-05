@@ -184,7 +184,7 @@ public class HomeAdapter extends RecyclerView.Adapter {
 
         }else if (viewType == Type_TimeLimit){
 
-            ((TimeLimitHolder)holder).bindHolder(houseBeans.get(LimitOffset));
+            ((TimeLimitHolder)holder).bindHolder(houseBeans.get(LimitOffset),this.context);
 
             LimitOffset++;
             if (LimitOffset >= houseBeans.size()){
@@ -195,7 +195,7 @@ public class HomeAdapter extends RecyclerView.Adapter {
 
         }else if (viewType == Type_YUYUE){
 
-            ((ReverHouseHolder)holder).bindHolder(reservationBeans.get(YuYueOffset));
+            ((ReverHouseHolder)holder).bindHolder(reservationBeans.get(YuYueOffset),this.context);
             YuYueOffset++;
             if (YuYueOffset >= reservationBeans.size()){
 
