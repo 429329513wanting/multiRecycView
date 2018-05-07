@@ -21,16 +21,16 @@ import java.util.Date;
 
 public class Constant {
 
-    public static final String APITOKEN = "xx00xx00";
-    public static final String APPKEY = "xx00xx0";
+    public static final String APITOKEN = "!!!!!!!!!!!!!!";
+    public static final String APPKEY = "!!!!!!!!!!!!!!";
 
 
     public static final String Baseurl = "http://www.benke168.com";
-    public static final String Doman = "api";
+    public static final String Doman = "!!!!!!!!!!!!!!";
 
-    public static final String LOGIN = "login";
-    public static final String PERSONAL = "personal";
-    public static final String INDEX = "Index";
+    public static final String LOGIN = "!!!!!!!!!!!!!!";
+    public static final String PERSONAL = "!!!!!!!!!!!!!!";
+    public static final String INDEX = "!!!!!!!!!!!!!!";
 
 
 

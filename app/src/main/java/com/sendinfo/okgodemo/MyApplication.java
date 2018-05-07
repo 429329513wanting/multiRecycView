@@ -9,6 +9,8 @@ import com.lzy.okgo.cache.CacheEntity;
 import com.lzy.okgo.cache.CacheMode;
 import com.lzy.okgo.model.HttpHeaders;
 import com.lzy.okgo.model.HttpParams;
+import com.orhanobut.logger.AndroidLogAdapter;
+import com.orhanobut.logger.Logger;
 
 import java.util.concurrent.TimeUnit;
 
@@ -35,6 +37,7 @@ public class MyApplication extends Application {
         context = getApplicationContext();
         configOkGo();
         Utils.init(this);
+        Logger.addLogAdapter(new AndroidLogAdapter());
     }
 
     public static Context getContext(){

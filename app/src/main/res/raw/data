@@ -1,0 +1,222 @@
+{
+    "carousel": [
+        {
+            "id": "14",
+            "car_img": "/Uploads/img/20180503/5aea72b0d1ba2.jpg",
+            "cityid": "0",
+            "type": "1",
+            "sort": "0",
+            "url": "",
+            "remark": "",
+            "status": "1",
+            "createtime": "1525314227",
+            "updatetime": "1525314227"
+        },
+        {
+            "id": "13",
+            "car_img": "/Uploads/img/20180316/5aab1870e050c.jpg",
+            "cityid": "0",
+            "type": "1",
+            "sort": "0",
+            "url": "",
+            "remark": "",
+            "status": "1",
+            "createtime": "1521161604",
+            "updatetime": "1521162355"
+        },
+        {
+            "id": "12",
+            "car_img": "/Uploads/img/20180227/5a94c775a1ac5.jpg",
+            "cityid": "0",
+            "type": "1",
+            "sort": "0",
+            "url": "",
+            "remark": "",
+            "status": "1",
+            "createtime": "1519695530",
+            "updatetime": "1519699831"
+        },
+        {
+            "id": "10",
+            "car_img": "/Uploads/img/20180226/5a93c6180378e.jpg",
+            "cityid": "0",
+            "type": "1",
+            "sort": "0",
+            "url": "http://www.benke168.com/Home/House/detail/id/715.html",
+            "remark": "",
+            "status": "1",
+            "createtime": "1519633764",
+            "updatetime": "1519633945"
+        },
+        {
+            "id": "7",
+            "car_img": "/Uploads/img/20180226/5a93ba1cf3cc5.jpg",
+            "cityid": "0",
+            "type": "1",
+            "sort": "0",
+            "url": "",
+            "remark": "",
+            "status": "1",
+            "createtime": "1519630533",
+            "updatetime": "1519630879"
+        },
+        {
+            "id": "9",
+            "car_img": "/Uploads/img/20180226/5a93b9c4cda6b.jpg",
+            "cityid": "0",
+            "type": "1",
+            "sort": "0",
+            "url": "",
+            "remark": "",
+            "status": "1",
+            "createtime": "1519630791",
+            "updatetime": "1519630791"
+        }
+    ],
+    "house": [
+        {
+            "id": "456",
+            "title": "富元雅苑西门·33栋1单元2802室SZ-00179",
+            "browse": "309",
+            "houseid": "361",
+            "price": "750.00",
+            "roombg": "/Uploads/img/20171122/5a1507ee662a3.jpg",
+            "typeid": "2",
+            "cityid": "178",
+            "areaid": "181",
+            "labelid": "2,3,4",
+            "label": [
+                {
+                    "name": "精装白领专享"
+                },
+                {
+                    "name": "真房源"
+                },
+                {
+                    "name": "家具家电齐全"
+                }
+            ],
+            "typename": "合租",
+            "area": "苏州市相城区"
+        },
+        {
+            "id": "455",
+            "title": "富元雅苑西门·33栋1单元2802室SZ-00176",
+            "browse": "174",
+            "houseid": "361",
+            "price": "880.00",
+            "roombg": "/Uploads/img/20171122/5a14f8b88c82c.jpg",
+            "typeid": "2",
+            "cityid": "178",
+            "areaid": "181",
+            "labelid": "2,3,4",
+            "label": [
+                {
+                    "name": "精装白领专享"
+                },
+                {
+                    "name": "真房源"
+                },
+                {
+                    "name": "家具家电齐全"
+                }
+            ],
+            "typename": "合租",
+            "area": "苏州市相城区"
+        },
+        {
+            "id": "577",
+            "title": "正荣国领76栋404室SZ-00035",
+            "browse": "154",
+            "houseid": "342",
+            "price": "720.00",
+            "roombg": "/Uploads/img/20171215/5a3338664c4f1.JPG",
+            "typeid": "2",
+            "cityid": "178",
+            "areaid": "180",
+            "labelid": "1,2,4,5",
+            "label": [
+                {
+                    "name": "精装白领专享"
+                },
+                {
+                    "name": "地铁轻轨房"
+                },
+                {
+                    "name": "精装单间"
+                },
+                {
+                    "name": "真房源"
+                }
+            ],
+            "typename": "合租",
+            "area": "苏州市吴中区"
+        }
+    ],
+    "reservation": [
+        {
+            "id": "581",
+            "title": "鑫苑湖居世家51栋101室SZ-00025",
+            "browse": "256",
+            "houseid": "340",
+            "price": "940.00",
+            "roombg": "/Uploads/img/20171215/5a333ecdec86b.jpg",
+            "direction": "南",
+            "acreage": "22.0",
+            "is_loan": "1",
+            "is_self": "1",
+            "labelid": "1,2,4,5",
+            "housekeeperid": "13",
+            "housetypeid": "14",
+            "label": [
+                {
+                    "name": "精装白领专享"
+                },
+                {
+                    "name": "地铁轻轨房"
+                },
+                {
+                    "name": "精装单间"
+                },
+                {
+                    "name": "真房源"
+                }
+            ],
+            "housetype": " 四室二厅二卫",
+            "roompic": [
+                {
+                    "pic": "/Uploads/img/20171215/5a333eda0b758.jpg",
+                    "type": "1"
+                },
+                {
+                    "pic": "/Uploads/img/20171215/5a333edbc6611.jpg",
+                    "type": "1"
+                },
+                {
+                    "pic": "/Uploads/img/20171215/5a333ed8356bb.jpg",
+                    "type": "1"
+                }
+            ]
+        }
+    ],
+    "news": [
+        {
+            "id": "1189",
+            "new_img": "/Uploads/img/20180503/5aeab98f41058.jpg",
+            "title": "我们需要怎样的五四青年节",
+            "summary": "只有当每个青年人都能够认识到这样的基本价值，都清楚看到自己的本职工作的意义，才能够不断奉献，不断呈现出一个新的天地。"
+        },
+        {
+            "id": "1191",
+            "new_img": "/Uploads/img/20180503/5aeac6c056de0.jpg",
+            "title": "15个超实用的节电小窍门！",
+            "summary": "夏天注意切断待机电器的电源，一来减少能耗，而来防止发生意外。"
+        },
+        {
+            "id": "1190",
+            "new_img": "/Uploads/img/20180503/5aeac094d248c.jpg",
+            "title": "在你想要放弃的那一刻",
+            "summary": "不忘初心，方得始终。"
+        }
+    ]
+}
