@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mask_linear"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:background="#ccc"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="165dp" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:textSize="16sp"
+            android:hint="名称"
+            android:textColor="#000"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/type_tv"
+            android:layout_below="@+id/title_tv"
+            android:layout_marginTop="5dp"
+            android:hint="房屋名称"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tag_tv"
+            android:layout_below="@+id/type_tv"
+            android:layout_marginTop="5dp"
+            android:hint="房屋名称"
+            android:textSize="12sp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/price_tv"
+            android:hint="￥123.00"
+            android:layout_below="@+id/title_tv"
+            android:layout_alignParentRight="true"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
