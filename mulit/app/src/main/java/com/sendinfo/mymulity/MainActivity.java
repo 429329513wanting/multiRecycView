@@ -1,9 +1,12 @@
 package com.sendinfo.mymulity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import me.drakeet.multitype.ClassLinker;
+import me.drakeet.multitype.ItemViewBinder;
 import me.drakeet.multitype.MultiTypeAdapter;
 
 import android.os.Bundle;
@@ -42,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
         recyclerView = findViewById(R.id.recycview);
-        //recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
         GridLayoutManager layoutManager = new GridLayoutManager(this,2);
         recyclerView.setLayoutManager(layoutManager);
@@ -50,13 +52,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public int getSpanSize(int position) {
 
-             if(position>0 && position<= homeData.getHouse().size()){
+             if(position>1 && position<= homeData.getHouse().size()+1){
 
-                    return 1;
+                    return 1;//占1列
 
                 }else{
 
-                    return 2;
+                    return 2;//占2列
                 }
             }
         });
@@ -66,7 +68,29 @@ public class MainActivity extends AppCompatActivity {
         adapter.register(HomeData.class, new BannerViewBinder());
         adapter.register(HomeData.HouseBean.class,new TimeLimitViewBinder((this)));
         adapter.register(HomeData.ReservationBean.class,new YuyueViewBinder());
-        adapter.register(String.class,new FooterViewBinder());
+
+        //一个模型对应多个Item
+        adapter.register(TitleBean.class).to(
+                new HeaderViewBinder(),
+                new FooterViewBinder()
+        ).withClassLinker(new ClassLinker<TitleBean>() {
+            @NonNull
+            @Override
+            public Class<? extends ItemViewBinder<TitleBean, ?>> index(int position, @NonNull TitleBean titleBean) {
+
+                if (titleBean.type.equals("header")){
+
+                    return HeaderViewBinder.class;
+
+                }else {
+
+                    return FooterViewBinder.class;
+                }
+            }
+        });
+
+
+
         recyclerView.setAdapter(adapter);
 
         reloadData();
@@ -79,18 +103,35 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Object> items = new ArrayList<>();
         items.add(homeData);
         adapter.setItems(items);
+
+
+        TitleBean bean0 = new TitleBean();
+        bean0.title = "限时房源";
+        bean0.type = "header";
+        items.add(bean0);
+
         for (HomeData.HouseBean bean : homeData.getHouse()){
 
             items.add(bean);
         }
-        items.add("限时房源");
+        TitleBean bean111 = new TitleBean();
+        bean111.title = "查看更多房源";
+        bean111.type = "footer";
+        items.add(bean111);
+
+        TitleBean bean1 = new TitleBean();
+        bean1.title = "火爆预约房源";
+        bean1.type = "header";
+        items.add(bean1);
 
         for (HomeData.ReservationBean bean : homeData.getReservation()){
 
             items.add(bean);
         }
-        items.add("查看更多房源");
-
+        TitleBean bean11 = new TitleBean();
+        bean11.title = "查看更多房源";
+        bean11.type = "footer";
+        items.add(bean11);
         adapter.notifyDataSetChanged();
     }
 

@@ -18,14 +18,14 @@ import me.drakeet.multitype.ItemViewBinder;
  * </pre>
  */
 
-public class FooterViewBinder extends ItemViewBinder<TitleBean, FooterViewBinder.FooterViewHolder> {
+public class HeaderViewBinder extends ItemViewBinder<TitleBean, HeaderViewBinder.FooterViewHolder> {
 
 
     @NonNull
     @Override
     protected FooterViewHolder onCreateViewHolder(@NonNull LayoutInflater inflater, @NonNull ViewGroup parent) {
 
-        View view = inflater.inflate(R.layout.session_footer,parent,false);
+        View view = inflater.inflate(R.layout.session_header,parent,false);
         return new FooterViewHolder(view);
     }
 
