@@ -18,7 +18,7 @@
         android:layout_below="@+id/title_tv"
         android:layout_marginTop="5dp"
         android:hint="房屋名称"
-        android:textSize="12sp"
+        android:textSize="@dimen/sp_12"
         android:layout_marginBottom="5dp"
         android:textColor="@android:color/holo_orange_dark"
         android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
         android:id="@+id/info_tv"
         android:layout_below="@+id/tag_tv"
         android:hint="房屋名称"
-        android:textSize="12sp"
+        android:textSize="@dimen/sp_12"
         android:layout_marginBottom="5dp"
         android:textColor="@android:color/darker_gray"
         android:layout_width="wrap_content"
@@ -50,7 +50,7 @@
         android:text="立即预约"
         android:layout_marginTop="10dp"
         android:layout_alignParentRight="true"
-        android:textSize="14sp"
+        android:textSize="@dimen/sp_14"
         android:textColor="#fff"
         android:gravity="center"
         android:background="@drawable/more_bg"
@@ -87,7 +87,7 @@
             android:layout_width="0dp"
             android:background="#ccc"
             android:layout_weight="1"
-            android:layout_height="155dp" />
+            android:layout_height="@dimen/dp_155" />
     </LinearLayout>
 
 

@@ -7,7 +7,7 @@
     <com.youth.banner.Banner
         android:id="@+id/banner"
         android:layout_width="match_parent"
-        android:layout_height="175dp">
+        android:layout_height="@dimen/dp_175">
 
     </com.youth.banner.Banner>
 
@@ -20,13 +20,13 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="75dp">
+            android:layout_height="@dimen/dp_75">
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:text="bus"
                 android:drawableTop="@mipmap/bus"
-                android:textSize="14sp"
+                android:textSize="@dimen/sp_14"
                 android:paddingTop="10dp"
                 android:textColor="@android:color/holo_orange_dark"
                 android:gravity="center"
@@ -37,7 +37,7 @@
                 android:layout_weight="1"
                 android:text="bus"
                 android:drawableTop="@mipmap/bus"
-                android:textSize="14sp"
+                android:textSize="@dimen/sp_14"
                 android:paddingTop="10dp"
                 android:textColor="@android:color/holo_orange_dark"
                 android:gravity="center"
@@ -48,7 +48,7 @@
                 android:layout_weight="1"
                 android:text="bus"
                 android:drawableTop="@mipmap/bus"
-                android:textSize="14sp"
+                android:textSize="@dimen/sp_14"
                 android:paddingTop="10dp"
                 android:textColor="@android:color/holo_orange_dark"
                 android:gravity="center"
@@ -59,7 +59,7 @@
                 android:layout_weight="1"
                 android:text="bus"
                 android:drawableTop="@mipmap/bus"
-                android:textSize="14sp"
+                android:textSize="@dimen/sp_14"
                 android:paddingTop="10dp"
                 android:textColor="@android:color/holo_orange_dark"
                 android:gravity="center"
@@ -70,14 +70,14 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="75dp">
+            android:layout_height="@dimen/dp_75">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:text="bus"
                 android:drawableTop="@mipmap/bus"
-                android:textSize="14sp"
+                android:textSize="@dimen/sp_14"
                 android:paddingTop="10dp"
                 android:textColor="@android:color/holo_orange_dark"
                 android:gravity="center"
@@ -88,7 +88,7 @@
                 android:layout_weight="1"
                 android:text="bus"
                 android:drawableTop="@mipmap/bus"
-                android:textSize="14sp"
+                android:textSize="@dimen/sp_14"
                 android:paddingTop="10dp"
                 android:textColor="@android:color/holo_orange_dark"
                 android:gravity="center"
@@ -99,7 +99,7 @@
                 android:layout_weight="1"
                 android:text="bus"
                 android:drawableTop="@mipmap/bus"
-                android:textSize="14sp"
+                android:textSize="@dimen/sp_14"
                 android:paddingTop="10dp"
                 android:textColor="@android:color/holo_orange_dark"
                 android:gravity="center"
@@ -110,7 +110,7 @@
                 android:layout_weight="1"
                 android:text="bus"
                 android:drawableTop="@mipmap/bus"
-                android:textSize="14sp"
+                android:textSize="@dimen/sp_14"
                 android:paddingTop="10dp"
                 android:textColor="@android:color/holo_orange_dark"
                 android:gravity="center"

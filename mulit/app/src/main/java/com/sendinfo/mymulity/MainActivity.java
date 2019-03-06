@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         adapter = new MultiTypeAdapter();
         adapter.register(HomeData.class, new BannerViewBinder());
         adapter.register(HomeData.HouseBean.class,new TimeLimitViewBinder((this)));
@@ -89,12 +88,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
-
         recyclerView.setAdapter(adapter);
 
         reloadData();
-
     }
 
     private void reloadData(){
